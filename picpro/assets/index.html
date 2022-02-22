@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head lang="pt-BR">
+        <meta charset="UTF-8">
+        <title>PicPro</title>
+    </head>
+
+    <body>
+        <!-- Header -->
+        <header class="cabecalho">
+            <div class="container">
+                <figure class="cabecalho__logoPicpro">
+                    <img src="./img/logo-picpro.png" alt="Logo PicPro">
+                </figure>
+                <figure class="cabecalho__logoKenzie">
+                    <img src="./img/logo-kenzie.png" alt="Logo Kenzie">
+                </figure>
+            </div>
+        </header>
+        <!-- Main Content -->
+        <main>
+            <section class="secaoDetalhesConta">
+                <div class="secaoDetalhesConta__sobreUsuario">
+                    <img src="./img/usuario.png" alt="User Icon">
+                    <p>Hello, <strong>@igorsousa</strong></p>
+                </div>
+                <div class="secaoDetalhesConta__sobreSaldo">
+                    <p>PicPay Balance, <strong>R$ 0,00</strong></p>
+                    <button>Extrato</button>
+                    <ul class="secaoDetalhesConta__opcoesTransacoes">
+                        <li class="secaoDetalhesConta__itemTransacao">
+                            <img src="./img/qrcode.png" alt="QR Code Icon">
+                            <p>QR Code</p>
+                        </li>
+                        <li class="secaoDetalhesConta__itemTransacao">
+                            <img src="./img/pix.png" alt="Pix Icon">
+                            <p>PIX</p>
+                        </li>
+                        <li class="secaoDetalhesConta__itemTransacao">
+                            <img src="./img/codigo.png" alt="Bills Icon">
+                            <p>Pay Bills</p>
+                        </li>
+                        <li class="secaoDetalhesConta__itemTransacao">
+                            <img src="./img/cobrar-icon.png" alt="Charge Icon">
+                            <p>Charge</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="secaoTransacao">
+                <!-- Main Div -->
+                <div class="container">
+                    <!-- Div Select payment method -->
+                    <div class="secaoTransacao__avisoSelecao">
+                        <p>Payment Method</p>
+                        <img src="./img/banner.png" alt="PicPay's Banner">
+                    </div>
+                    <!-- Div QR code -->
+                    <div class="secaoTransacao__qrCode">
+                        <img src="./img/qrcode.png" alt="QR Code image">
+                        <p>@igorsousa</p>
+                        <button>Charge a friend</button>
+                        <strong>Share my code</strong>
+                    </div>
+                    <!-- Div PIX -->
+                    <div class="secaoTransacao__pix">
+                        <img src="./img/pix-logo.png" alt="Pix logo">
+                        <div class="secaoTransacao__boxOpcao">
+                            <img src="./img/pix1.png" alt="Icon Pix Option">
+                            <p>Envie por CPF/CNPJ, telefone, e-mail ou chave aleatoria.</p>
+                        </div>
+                        <div class="secaoTransacao__boxOpcao">
+                            <img src="./img/pix2.png" alt="Icon Pix Option 2">
+                            <p>Insira um codigo Pix Copia e Cola para enviar um pagamento</p>
+                        </div>
+                    </div>
+                    <!-- Div Tickets -->
+                    <div class="secaoTransacao__tickets">
+                        <img src="./img/boleto.png" alt="Ticket Icon">
+                        <h2><strong>Pagar com codigo de barras</strong></h2>
+                        <p>Voce pode parcelar em ate 12x no cartao ou usar seu saldo em carteira pra pagar a vista.</p>
+                        <input type="number" placeholder="Insira o codigo de barras">
+                    </div>
+                    <!-- Div Charge -->
+                    <div class="secaoTransacao__payUp">
+                        <img src="./img/cobrar.png" alt="PayUp Icon">
+                        <h2>Pay Up</h2>
+                        <p>Divida a conta com os amigos de forma facil!</p>
+                        <div class="secaoTransacao__boxOpcao">
+                            <img src="./img/picpay-icon.png" alt="Picpay Icon">
+                            <p>
+                                <strong>Friends at PicPay</strong> Divida e acompanhe um gasto com pessoas por aqui
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Footer, end of page -->
+            <footer class="rodape">
+                <ul class="rodape__menuPrincipal">
+                    <li class="rodape__item"> 
+                        <a href="#">
+                            <img src="./img/inicio.png" alt="Home Icon">
+                        </a>
+                        <p>Home</p>
+                    </li>
+                    <li class="rodape__item">
+                        <a href="#">
+                            <img src="./img/carteira-icon.png" alt="Wallet Icon">
+                        </a>
+                        <p>Wallet</p>
+                    </li>
+                    <li class="rodape__item">
+                        <a href="#">
+                            <img src="./img/notificacao.png" alt="Notification Icon">
+                        </a>
+                        <p>Payup</p>
+                    </li>
+                    <li class="rodape__item">
+                        <a href="#">
+                            <img src="./img/inicio.png" alt="Home Icon">
+                        </a>
+                        <p>Notifications</p>
+                    </li>
+                    <li class="rodape__item">
+                        <a href="#">
+                            <img src="./img/bolsa.png" alt="Store Icon">
+                        </a>
+                        <p>Store</p>
+                    </li>
+                </ul>
+            </footer>
+        </main>
+    </body>
+</html>
