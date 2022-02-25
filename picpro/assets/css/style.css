@@ -38,6 +38,26 @@ body {
 .secaoDetalhesConta__sobreUsuario {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+}
+
+.secaoDetalhesConta__sobreUsuario .sobreUsuario {
+    display: flex;
+    align-items: center;
+}
+
+.secaoDetalhesConta__sobreUsuario .iconesPresenteChat {
+    display: flex;
+    align-items: center;
+}
+
+.secaoDetalhesConta__sobreUsuario .iconesPresenteChat figure {
+    width: 100%;
+    max-width: 40px;
+}
+
+.secaoDetalhesConta__sobreUsuario .iconesPresenteChat .iconesPresente {
+    margin-right: 40px;
 }
 
 .secaoDetalhesConta__sobreUsuario p {
@@ -64,14 +84,27 @@ body {
     margin-top: 20px;
 }
 
-.secaoDetalhesConta__sobreSaldo p {
+.secaoDetalhesConta__sobreSaldo .sobreSaldo--saldo {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
     font-size: 18px;
     line-height: 22px;
 }
 
-.secaoDetalhesConta__sobreSaldo p strong {
-    display: block;
+.secaoDetalhesConta__sobreSaldo .sobreSaldo--saldo div {
+    display: flex;
+    margin-top: 5px;
+}
+
+.secaoDetalhesConta__sobreSaldo .sobreSaldo--saldo div strong {
     font-weight: bold;
+}
+
+.secaoDetalhesConta__sobreSaldo .sobreSaldo--saldo div img {
+    width: 100%;
+    max-width: 35px;
+    margin-left: 15px;
 }
 
 .secaoDetalhesConta__sobreSaldo button {
@@ -82,6 +115,10 @@ body {
     padding: 10px 60px;
     border-radius: 10px;
     cursor: pointer;
+}
+
+.secaoDetalhesConta__sobreSaldo button:hover {
+    background-color: #D2D2D2;
 }
 
 .secaoDetalhesConta__opcoesTransacoes {
@@ -131,7 +168,10 @@ body {
 }
 
 .secaoTransacao__qrCode {
+    display: flex;
+    flex-direction: column;
     text-align: center;
+    align-items: center;
 }
 
 .secaoTransacao__qrCode img {
@@ -156,10 +196,20 @@ body {
     cursor: pointer;
 }
 
+.secaoTransacao__qrCode button:hover {
+    background-color: forestgreen;
+}
+
 .secaoTransacao__qrCode a {
     display: block;
     color: #000;
     font-weight: bold;
+    max-width: fit-content;
+    
+}
+
+.secaoTransacao__qrCode a:hover {
+    color: forestgreen;
 }
 
 .secaoTransacao__pix img {
@@ -171,7 +221,7 @@ body {
     display: flex;
     align-items: center;
     border: 1px solid #D2D2D2;
-    max-width: 500px;
+    max-width: 425px;
     padding: 14px 10px;
     border-radius: 10px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
@@ -187,6 +237,7 @@ body {
 .secaoTransacao__boxOpcao p {
     font-size: 16px;
     line-height: 20px;
+    
 }
 
 .secaoTransacao__tickets {
@@ -221,13 +272,29 @@ body {
     color: #000;
 }
 
+.secaoTransacao__payUp .secaoTransacao__boxOpcao {
+    padding: 3px 30px;
+}
+
 .secaoTransacao__payUp .secaoTransacao__boxOpcao p {
     margin-left: 10px;
+    font-size: 16px;
+}
+
+.secaoTransacao__payUp .secaoTransacao__boxOpcao p strong {
+    display: block;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.secaoTransacao__payUp .secaoTransacao__boxOpcao img {
+    max-width: 60px;
+    padding-right: 10px;
 }
 
 .secaoTransacao__payUp img {
     width: 100%;
-    max-width: 80px;
+    max-width: 60px;
 }
 
 .secaoTransacao__payUp h2 {
@@ -249,26 +316,46 @@ body {
 .rodape .rodape__menuPrincipal {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-content: center;
 }
 
 .rodape .rodape__menuPrincipal li {
-    text-align: center;
+    display: block;
+    
 }
 
 .rodape .rodape__menuPrincipal li a {
-    color: #D2D2D2;
+    color: #000;
     text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .rodape .rodape__menuPrincipal li a img {
     width: 100%;
-    max-width: 40px;
     margin: 10px 0 20px 0;
 }
 
-.rodape .rodape__menuPrincipal li p {
+.rodape .rodape__menuPrincipal .rodape__item .home {
+    max-width: 40px;
+}
 
+.rodape .rodape__menuPrincipal .rodape__item .wallet {
+    max-width: 32px;
+}
+
+.rodape .rodape__menuPrincipal .rodape__item .notifications {
+    max-width: 30px;
+}
+
+.rodape .rodape__menuPrincipal .rodape__item .store {
+    max-width: 40px;
+}
+
+.rodape .rodape__menuPrincipal li a p {
+    max-width: 30px;
 }
 
 .rodape .rodape__item--payUp {
