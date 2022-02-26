@@ -29,7 +29,7 @@
                     <div class="secaoDetalhesConta__sobreUsuario">
                         <div class="sobreUsuario">
                             <img src="./assets/img/usuario.png" alt="User Icon">
-                            <p>Hello, <strong>@igorsousa</strong></p>
+                            <p>Ola, <strong>@rebecasantos</strong></p>
                         </div>
                         <div class="iconesPresenteChat">
                             <figure class="iconesPresente">
@@ -42,7 +42,7 @@
                     </div>
                     <div class="secaoDetalhesConta__sobreSaldo">
                         <div class="sobreSaldo--saldo">
-                            <p>PicPay Balance</p>
+                            <p>Saldo PicPay</p>
                             <div>
                                 <strong>R$ 0,00</strong>
                                 <img src="./assets/img/visualizar.png" alt="Icone visualizar">
@@ -51,21 +51,29 @@
                         <button>Extrato</button>
                     </div>
                     <ul class="secaoDetalhesConta__opcoesTransacoes">
-                        <li class="secaoDetalhesConta__itemTransacao">
-                            <img src="./assets/img/qrcode.png" alt="QR Code Icon">
+                        <li id="1" class="secaoDetalhesConta__itemTransacao--qrcode">
+                            <figure>
+                                <img src="./assets/img/qrcode.png" alt="QR Code Icon">
+                            </figure>
                             <p>QR Code</p>
                         </li>
-                        <li class="secaoDetalhesConta__itemTransacao">
-                            <img src="./assets/img/pix.png" alt="Pix Icon">
+                        <li id="2" class="secaoDetalhesConta__itemTransacao--pix">
+                            <figure>
+                                <img src="./assets/img/pix.png" alt="Pix Icon">
+                            </figure>
                             <p>PIX</p>
                         </li>
-                        <li class="secaoDetalhesConta__itemTransacao">
-                            <img src="./assets/img/codigo.png" alt="Bills Icon">
-                            <p>Pay Bills</p>
+                        <li id="3" class="secaoDetalhesConta__itemTransacao--boleto">
+                            <figure>
+                                <img src="./assets/img/codigo.png" alt="Bills Icon">
+                            </figure>
+                            <p>Pagar Boleto</p>
                         </li>
-                        <li class="secaoDetalhesConta__itemTransacao">
-                            <img src="./assets/img/cobrar-icon.png" alt="Charge Icon">
-                            <p>Charge</p>
+                        <li id="4" class="secaoDetalhesConta__itemTransacao--cobrar">
+                            <figure>
+                                <img src="./assets/img/cobrar-icon.png" alt="Charge Icon">
+                            </figure>
+                            <p>Cobrar</p>
                         </li>
                     </ul>
                 </div>
@@ -74,19 +82,19 @@
                 <!-- Main Div -->
                 <div class="container">
                     <!-- Div Select payment method -->
-                    <div class="secaoTransacao__avisoSelecao">
-                        <p>Payment Method</p>
+                    <div class="secaoTransacao__avisoSelecao show">
+                        <p>Selecione a forma de pagamento</p>
                         <img src="./assets/img/banner.png" alt="PicPay's Banner">
                     </div>
                     <!-- Div QR code -->
-                    <div class="secaoTransacao__qrCode">
+                    <div data-id="1" class="secaoTransacao__qrCode">
                         <img src="./assets/img/qrcode-imagem.png" alt="QR Code image">
                         <p>@igorsousa</p>
-                        <button>Charge a friend</button>
-                        <a href="#">Share my code</a>
+                        <button>Cobrar um amigo</button>
+                        <a href="#">Compartilhar meu codigo</a>
                     </div>
                     <!-- Div PIX -->
-                    <div class="secaoTransacao__pix">
+                    <div data-id="2" class="secaoTransacao__pix">
                         <img src="./assets/img/pix-logo.png" alt="Pix logo">
                         <div class="secaoTransacao__boxOpcao">
                             <img src="./assets/img/pix1.png" alt="Icon Pix Option">
@@ -98,21 +106,21 @@
                         </div>
                     </div>
                     <!-- Div Tickets -->
-                    <div class="secaoTransacao__tickets">
+                    <div data-id="3" class="secaoTransacao__tickets">
                         <img src="./assets/img/boleto.png" alt="Ticket Icon">
                         <h2><strong>Pagar com codigo de barras</strong></h2>
                         <p>Voce pode parcelar em ate 12x no cartao ou usar seu saldo em carteira pra pagar a vista.</p>
                         <input type="text" placeholder="Insira o codigo de barras">
                     </div>
                     <!-- Div Charge -->
-                    <div class="secaoTransacao__payUp">
+                    <div data-id="4" class="secaoTransacao__payUp">
                         <img src="./assets/img/cobrar.png" alt="PayUp Icon">
                         <h2>Pay Up</h2>
                         <p>Divida a conta com os amigos de forma facil!</p>
                         <div class="secaoTransacao__boxOpcao">
                             <img src="./assets/img/picpay-icon.png" alt="Picpay Icon">
                             <p>
-                                <strong>Friends at PicPay</strong> Divida e acompanhe um gasto com pessoas por aqui
+                                <strong>Amigos no PicPay</strong> Divida e acompanhe um gasto com pessoas por aqui
                             </p>
                         </div>
                     </div>
@@ -156,5 +164,6 @@
                 </div>
             </footer>
         </main>
+        <script src="./assets/js/script.js"></script>
     </body>
 </html>
