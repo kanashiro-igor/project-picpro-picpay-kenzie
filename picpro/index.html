@@ -14,7 +14,7 @@
     <body>
         <!-- Header -->
         <header class="cabecalho">
-            <div class="container">
+            <div class="container-cabecalho">
                 <figure class="cabecalho-logoPicpro">
                     <img src="./assets/img/logo-picpro.png" alt="Logo PicPro">
                 </figure>
@@ -46,7 +46,7 @@
                         <div class="sobreSaldo-saldo">
                             <p>Saldo PicPay</p>
                             <div>
-                                <strong>R$ 0,00</strong>
+                                <strong class="hidden">R$ 0,00</strong>
                                 <img src="./assets/img/visualizar.png" alt="Icone visualizar">
                             </div>
                         </div>
@@ -84,19 +84,19 @@
                 <!-- Main Div -->
                 <div class="container-transacao">
                     <!-- Div Select payment method -->
-                    <div class="secao-transacao-selecao show">
+                    <div class="secao-transacao-selecao">
                         <p>Selecione a forma de pagamento</p>
                         <img src="./assets/img/banner.png" alt="Banner PicPay">
                     </div>
                     <!-- Div QR code -->
-                    <div data-id="1" class="secao-transacao-qrCode">
+                    <div data-id="1" class="secao-transacao-qrCode hidden">
                         <img src="./assets/img/qrcode-imagem.png" alt="Imagem QR Code">
                         <p>@rebecasantos</p>
                         <button>Cobrar um amigo</button>
                         <a href="#">Compartilhar meu codigo</a>
                     </div>
                     <!-- Div PIX -->
-                    <div data-id="2" class="secao-transacao-pix">
+                    <div data-id="2" class="secao-transacao-pix hidden">
                         <img src="./assets/img/pix-logo.png" alt="Logo PIX">
                         <div class="secao-transacao-boxOpcao">
                             <img src="./assets/img/pix1.png" alt="Icone Opcao PIX">
@@ -108,14 +108,14 @@
                         </div>
                     </div>
                     <!-- Div Boletos -->
-                    <div data-id="3" class="secao-transacao-boleto">
+                    <div data-id="3" class="secao-transacao-boleto hidden">
                         <img src="./assets/img/boleto.png" alt="Icone Boleto">
                         <h2><strong>Pagar com codigo de barras</strong></h2>
                         <p>Voce pode parcelar em ate 12x no cartao ou usar seu saldo em carteira pra pagar a vista.</p>
                         <input type="text" placeholder="Insira o codigo de barras">
                     </div>
                     <!-- Div Cobrar -->
-                    <div data-id="4" class="secao-transacao-pagar">
+                    <div data-id="4" class="secao-transacao-pagar hidden">
                         <img src="./assets/img/cobrar.png" alt="Icone Pagar">
                         <h2>Cobrar</h2>
                         <p>Divida a conta com os amigos de forma facil!</p>

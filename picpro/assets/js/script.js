@@ -6,18 +6,22 @@
 //4- Recuperar o id adicionado
 
 //Selecionando lista
-const listaOpcoes = document.querySelector(".secao-detalhesConta-opcoes-transacoes")
+const listaOpcoes = document.querySelector(".secao-detalhesConta-opcoesTransacoes")
+const buttonHome = document.querySelector(".home")
+const displayBalance = document.querySelector(".sobreSaldo-saldo img")
+
 //Adicionando escutador de eventos
 listaOpcoes.addEventListener("click", identificarOpcoes)
+buttonHome.addEventListener("click", retornaPadrao)
+displayBalance.addEventListener("click", mudaStatus)
 
 //Executando acao apos o click
 function identificarOpcoes(event) {
     
     //Identificando onde ocorreu o click
     const element = event.target
-
     //Verificando se achado LI
-    if(element.tagName = "LI") {
+    if(element.tagName == "LI") {
         //Recuperando classe especifica
         const specificClass = element.id
         
@@ -25,20 +29,39 @@ function identificarOpcoes(event) {
         const selectedSection = document.querySelector(`div[data-id="${specificClass}"]`)   
         
         //Removendo show de todas as divs
-        removeClassShow()
-
+        addClassHiddenInAllSectionDivs()
+        
         //Adicionar classe show
-        selectedSection.classList.add("show")
+        selectedSection.classList.remove("hidden")
+    }
+}
+
+function retornaPadrao() {
+
+    const mainDiv = document.querySelector(".secao-transacao-selecao")
+    addClassHiddenInAllSectionDivs()
+    mainDiv.classList.remove("hidden")
+}
+
+function mudaStatus() {
+    
+    const element = document.querySelector(".sobreSaldo-saldo strong")
+    if (element.classList != "") {
+        
+        element.classList.remove("hidden")
+    } else {
+        
+        element.classList.add("hidden")
     }
 }
 
 //Funcao para remover as classes das divs
-function removeClassShow() {
+function addClassHiddenInAllSectionDivs() {
 
-    const divs = document.querySelectorAll(".secao-transacao .container div")
+    const divs = document.querySelectorAll(".secao-transacao .container-transacao div")
     
     for (i = 0; i < divs.length; i++) {
 
-        divs[i].classList.remove("show")
+        divs[i].classList.add("hidden")
     }
 }
