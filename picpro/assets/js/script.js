@@ -6,7 +6,7 @@
 //4- Recuperar o id adicionado
 
 //Selecionando lista
-const listaOpcoes = document.querySelector(".secaoDetalhesConta__opcoesTransacoes")
+const listaOpcoes = document.querySelector(".secao-detalhesConta-opcoes-transacoes")
 //Adicionando escutador de eventos
 listaOpcoes.addEventListener("click", identificarOpcoes)
 
@@ -35,7 +35,7 @@ function identificarOpcoes(event) {
 //Funcao para remover as classes das divs
 function removeClassShow() {
 
-    const divs = document.querySelectorAll(".secaoTransacao .container div")
+    const divs = document.querySelectorAll(".secao-transacao .container div")
     
     for (i = 0; i < divs.length; i++) {
 
